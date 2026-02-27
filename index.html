@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCENSÃO OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>ASCENSÃO OS</h1>
+        <p>Sistema Operacional de Performance Humana Total</p>
+      </header>
+
+      <section class="core-grid card">
+        <div>
+          <small>Global Score</small>
+          <h2 id="globalScore">0</h2>
+        </div>
+        <div>
+          <small>Nível</small>
+          <h2 id="level">1</h2>
+        </div>
+        <div>
+          <small>Streak</small>
+          <h2 id="streak">0</h2>
+        </div>
+        <div>
+          <small>Disciplina</small>
+          <h2 id="disciplineIndex">0</h2>
+        </div>
+        <div>
+          <small>Estabilidade</small>
+          <h2 id="stabilityIndex">0</h2>
+        </div>
+        <div>
+          <small>Crescimento</small>
+          <h2 id="growthIndex">0</h2>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Estado de Alerta: <span id="alertState">NORMAL</span></h3>
+        <p id="risk" class="muted">Risco de regressão: 0%</p>
+      </section>
+
+      <section class="card">
+        <h3>Radar de Módulos</h3>
+        <div id="radar"></div>
+      </section>
+
+      <section class="card">
+        <h3>Mentor Directive</h3>
+        <p id="mentor"></p>
+      </section>
+
+      <section class="card controls">
+        <h3>Execução Validada (demo)</h3>
+        <button data-action="treino">Registrar Treino</button>
+        <button data-action="dieta">Registrar Dieta</button>
+        <button data-action="academico">Registrar Estudo</button>
+        <button data-action="espiritual">Registrar Oração</button>
+        <button data-action="daily">Rodar Avaliação Diária</button>
+      </section>
+
+      <section class="card">
+        <h3>Treino Guiado</h3>
+        <pre id="guided"></pre>
+      </section>
+
+      <section class="card">
+        <h3>Dieta Guiada</h3>
+        <pre id="dietGuide"></pre>
+      </section>
+
+      <section class="card controls">
+        <h3>Relatório Semanal</h3>
+        <button id="exportTxt">Exportar TXT</button>
+        <button id="exportJson">Exportar JSON</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
